@@ -11,58 +11,61 @@ if (!sessionStorage.getItem('expression')) {
 }
 
 window.addEventListener('keydown', function (event){
-    if(event.keyCode == 96){
+    // if(event.keyCode == 96 || event.keyCode == 48){
+    //     buttonPressed(0);
+    // }
+    if(event.key == 0){
         buttonPressed(0);
     }
-    else if(event.keyCode == 97){
+    else if(event.key == 1){
         buttonPressed(1);
     }
-    else if(event.keyCode == 98){
+    else if(event.key == 2){
         buttonPressed(2);
     }
-    else if(event.keyCode == 99){
+    else if(event.key == 3){
         buttonPressed(3);
     }
-    else if(event.keyCode == 100){
+    else if(event.key == 4){
         buttonPressed(4);
     }
-    else if(event.keyCode == 101){
+    else if(event.key == 5){
         buttonPressed(5);
     }
-    else if(event.keyCode == 102){
+    else if(event.key == 6){
         buttonPressed(6);
     }
-    else if(event.keyCode == 103){
+    else if(event.key == 7){
         buttonPressed(7);
     }
-    else if(event.keyCode == 104){
+    else if(event.key == 8){
         buttonPressed(8);
     }
-    else if(event.keyCode == 105){
+    else if(event.key == 9){
         buttonPressed(9);
     }
-    else if(event.keyCode == 107){
+    else if(event.key == '+'){
         buttonPressed('+');
     }
-    else if(event.keyCode == 109){
+    else if(event.key == '-'){
         buttonPressed('-');
     }
-    else if(event.keyCode == 106){
+    else if(event.key == '*'){
         buttonPressed('*');
     }
-    else if(event.keyCode == 111){
+    else if(event.key == '/'){
         buttonPressed('/');
     }
-    else if(event.keyCode == 110){
+    else if(event.key == '.'){
         buttonPressed('.');
     }
-    else if(event.keyCode == 187 || event.keyCode == 13){
+    else if(event.key == '=' || event.key == 'Enter'){
         buttonPressed('=');
     }
-    else if(event.keyCode == 8 || event.keyCode == 46){
+    else if(event.key == 'Backspace' || event.key == 'Delete'){
         buttonPressed('DEL');
     }
-    else if(event.keyCode == 27){
+    else if(event.key == 'Escape'){
         buttonPressed('RESET');
     }
 });
