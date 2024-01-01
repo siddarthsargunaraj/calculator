@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <span class="calc">calc</span>
+            <br>
+            <div class="display">
+                <br>
+                <span id="displayExp" class="textMargin"></span>
+            </div>
+
+            <div class="buttons">
+                <button class="button7" onclick="buttonPressed(7)">
+                    <span>7</span>
+                </button>
+                <button class="button8" onclick="buttonPressed(8)">
+                    <span>8</span>
+                </button>
+                <button class="button9" onclick="buttonPressed(9)">
+                    <span>9</span>
+                </button>
+                <button class="buttonDEL" onclick="buttonPressed('DEL')">
+                    <span>DEL</span>
+                </button>
+                <button class="button4" onclick="buttonPressed(4)">
+                    <span>4</span>
+                </button>
+                <button class="button5" onclick="buttonPressed(5)">
+                    <span>5</span>
+                </button>
+                <button class="button6" onclick="buttonPressed(6)">
+                    <span>6</span>
+                </button>
+                <button class="buttonPLUS" onclick="buttonPressed('+')">
+                    <span>+</span>
+                </button>
+                <button class="button1" onclick="buttonPressed(1)">
+                    <span>1</span>
+                </button>
+                <button class="button2" onclick="buttonPressed(2)">
+                    <span>2</span>
+                </button>
+                <button class="button3" onclick="buttonPressed(3)">
+                    <span>3</span>
+                </button>
+                <button class="buttonMINUS" onclick="buttonPressed('-')">
+                    <span>-</span>
+                </button>
+                <button class="buttonDOT" onclick="buttonPressed('.')">
+                    <span>.</span>
+                </button>
+                <button class="button0" onclick="buttonPressed(0)">
+                    <span>0</span>
+                </button>
+                <button class="buttonDIV" onclick="buttonPressed('/')">
+                    <span>/</span>
+                </button>
+                <button class="buttonMUL" onclick="buttonPressed('*')">
+                    <span>x</span>
+                </button>
+                <button class="buttonRESET" onclick="buttonPressed('RESET')">
+                    <span>RESET</span>
+                </button>
+                <button class="buttonRESULT" onclick="buttonPressed('=')">
+                    <span>=</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    
+</body>
+
+</html>
